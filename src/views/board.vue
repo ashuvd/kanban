@@ -28,7 +28,9 @@ export default {
         title: title.value,
         desc: ""
       }
-      this.$store.commit(`cards/${mutation}`, card)
+      if (title.value) {
+        this.$store.commit(`cards/${mutation}`, card);
+      }
     },
   }
 }
