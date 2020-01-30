@@ -116,6 +116,16 @@ button {
   padding: 0;
   flex: 1;
   max-width: 996px;
+  padding-top: 36px;
+  @include laptop {
+    max-width: 768px;
+  }
+  @include tablet {
+    max-width: 576px;
+  }
+  @include phone {
+    max-width: 320px;
+  }
 }
 
 ul {

@@ -57,14 +57,20 @@ export default {
 }
 </script>
 <style lang="scss">
+  @import '../assets/styles/mixins.scss';
   .list{
     width: 300px;
     padding: 12px;
     background-color: $gray;
     border-radius: 5px;
     margin-right: 24px;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-right: 0;
+    }
     &:last-child{
       margin-right: 0;
+      margin-bottom: 0;
     }
     &__title{
       margin-bottom: 16px;

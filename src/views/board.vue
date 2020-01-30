@@ -34,10 +34,14 @@ export default {
 }
 </script>
 <style lang="scss">
+  @import '../assets/styles/mixins.scss';
   .board{
     width: 100%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    @include tablet {
+      justify-content: center;
+    }
   }
 </style>
