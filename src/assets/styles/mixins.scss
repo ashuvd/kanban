@@ -1,0 +1,26 @@
+//adaptive
+@mixin fullhd {
+  @media (min-width: $fullhd){
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $desktop){
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: $laptop){
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: $tablet){
+    @content;
+  }
+}
+@mixin phone {
+  @media (min-width: $phone){
+    @content;
+  }
+}
